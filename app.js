@@ -5,7 +5,7 @@ const bodypaeser = require('body-parser')
 const app = express();
 app.use(bodypaeser({ extended: true }))
 
-app.get("/", ,(req, res) => {
+app.get("/",(req, res) => {
     res.sendFile(__dirname + "/Index.html")
 })
 
